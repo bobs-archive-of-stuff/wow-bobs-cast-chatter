@@ -21,7 +21,7 @@ Pick your cool spells, and use low chances:
 	/bcc add "Explosive Shot" 2 emote "lets loose a firey arrow."
 	/bcc add "Explosive Shot" 2 emote "lets loose a flaming arrow."
 
-With this setup there is roughly only a 2% chance that you will emote anything at all when mashing Explosive Shot.
+With this setup there is roughly only a 2% chance that you will emote anything at all when mashing Explosive Shot - unlike this screenshot where I used 100% again to get the screenshot in before General chat spammed my screen.
 
 ![Huntarded Huntard is Huntarded](http://www.opsat.net/derpdex/wow/bcc/huntard-demo.png)
 
