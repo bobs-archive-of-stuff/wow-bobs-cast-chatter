@@ -1,0 +1,8 @@
+## Interface: 50400
+## Title: Bob's Cast Chatter
+## Version: 1.0
+## Author: Thundersteak-MoonGuard
+## Notes: A little chatter script for casting.
+## SavedVariablesPerCharacter: BCCDB
+
+BobCastChatter.lua
