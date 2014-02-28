@@ -23,6 +23,8 @@ Pick your cool spells, and use low chances:
 
 With this setup there is roughly only a 2% chance that you will emote anything at all when mashing Explosive Shot.
 
+![Huntarded Huntard is Huntarded](http://www.opsat.net/derpdex/wow/bcc/huntard-demo.png)
+
 Find Me In Game
 ---------------------
 
