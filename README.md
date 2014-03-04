@@ -25,6 +25,15 @@ With this setup there is roughly only a 2% chance that you will emote anything a
 
 ![Huntarded Huntard is Huntarded](http://www.opsat.net/derpdex/wow/bcc/huntard-demo.png)
 
+Idle Timer
+---------------------
+
+By default there is an idle timer which is reset every time you cast a spell, this timer procs at a random time within a 3 minute window around the value specified, which is defaulted at 5 minutes. The idle timer will perform the same chance calculations as the spell messages, and to define these you use "idle timer" as the spell name.
+
+	/bcc add "idle timer" 100 emote "bounces up and down."
+	/bcc idle 10
+
+
 Find Me In Game
 ---------------------
 
