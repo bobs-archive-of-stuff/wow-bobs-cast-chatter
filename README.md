@@ -48,6 +48,13 @@ the spell name of "idle timer"
 
 This will make you bounce up and down every four minutes in instances, and every 12 minutes while in the open world.
 
+Message Tokens
+---------------------
+
+* @player - Will be replaced with your character's name.
+* @pet - Will be replaced by your pet's name, if you have one. Probably only works on hunters. If you use this token and you don't have a pet, the message containing it will not be used.
+* @target - Will be replaced by the name of your current target. If you have no target, then the message containing it will not be used.
+* @spell - Will be replaced by the name of the spell you cast to cause the action to happen.
 
 Find Me In Game
 ---------------------
