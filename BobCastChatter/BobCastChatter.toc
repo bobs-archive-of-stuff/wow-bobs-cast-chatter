@@ -6,3 +6,6 @@
 ## SavedVariablesPerCharacter: BCCDB
 
 BobCastChatter.lua
+BCC-Func-Slash.lua
+BCC-Func-Idle.lua
+BCC-Func-Util.lua
