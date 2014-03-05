@@ -41,7 +41,7 @@ function BCC_IdleTimer_Reset()
 
 	BCC_IdleTimer.CurTime = 0
 	BCC_IdleTimer.NextTime = math.random(
-		(((BCCDB.IdleProc * mult) - 1) * 60),
+		(((BCCDB.IdleProc * mult)) * 60),
 		(((BCCDB.IdleProc * mult) + 1) * 60)
 	)
 end
