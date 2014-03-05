@@ -5,9 +5,19 @@ A WoW addon that can randomly emote messages when casting spells to flavour shit
 
 **Viva Moon Guard!**
 
+![BCC](http://www.opsat.net/derpdex/wow/bcc/bcc.png)
+
 The premise behind this you can define a list of custom emotes per spell, even multiple per spell. Each time a spell is cast one of the messages you define will be selected at random. Then, the chance that message will actually happen (which is a value you define when creating the message) will decide the message will really happen.
 
-	/bcc add "<spell>" chance type "message"
+Type this command to see all the commands this addon has.
+
+	/bcc
+
+Typing a command like
+
+	/bcc add
+
+Will show you more information on how it works.
 
 Example
 ---------------------
@@ -21,17 +31,22 @@ Pick your cool spells, and use low chances:
 	/bcc add "Explosive Shot" 2 emote "lets loose a firey arrow."
 	/bcc add "Explosive Shot" 2 emote "lets loose a flaming arrow."
 
-With this setup there is roughly only a 2% chance that you will emote anything at all when mashing Explosive Shot - unlike this screenshot where I used 100% again to get the screenshot in before General chat spammed my screen.
-
-![Huntarded Huntard is Huntarded](http://www.opsat.net/derpdex/wow/bcc/huntard-demo.png)
+With this setup there is roughly only a 2% chance that you will emote anything at all when mashing Explosive Shot.
 
 Idle Timer
 ---------------------
 
-By default there is an idle timer which is reset every time you cast a spell, this timer procs at a random time within a 3 minute window around the value specified, which is defaulted at 5 minutes. The idle timer will perform the same chance calculations as the spell messages, and to define these you use "idle timer" as the spell name.
+There is an idle timer that will allow your character to auto emote things
+depending on how long it has been since you cast a spell. In dungeons/raids this defaults to every 2 minutes (give or take some RNG) to let people know just how bored you are with them wasting your time in LFR. This value gets multiplied while in the open world to be less spammy while out and about.
+
+To define the idle emotes, you do the same thing as a spell emote, just with
+the spell name of "idle timer"
 
 	/bcc add "idle timer" 100 emote "bounces up and down."
-	/bcc idle 10
+	/bcc idle 4
+	/bcc idleworldmult 3
+
+This will make you bounce up and down every four minutes in instances, and every 12 minutes while in the open world.
 
 
 Find Me In Game
