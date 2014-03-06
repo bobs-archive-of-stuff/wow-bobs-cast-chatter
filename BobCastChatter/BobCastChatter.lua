@@ -34,6 +34,8 @@ function BCC_OnEvent(self, event, ...)
 
 	if(event == "UNIT_SPELLCAST_SUCCEEDED") then
 		BCC_OnEvent_SpellCast(...)
+	elseif(event == "PLAYER_ENTERING_WORLD") then
+		BCC_OnEvent_PlayerEnterWorld(...)
 	elseif(event == "PLAYER_LOGIN") then
 		BCC_OnEvent_Init(...)
 	end
@@ -71,12 +73,17 @@ function BCC_OnEvent_SpellCast(...)
 	BCC_SpellMessage_OnSpellCast(spell)
 end
 
+function BCC_OnEvent_PlayerEnterWorld(...)
+	BCC_IdleTimer_Reset()
+end
+
 -- /////////////////////////////////////////////////////////////////////////////
 -- /////////////////////////////////////////////////////////////////////////////
 
 local Frame = CreateFrame("FRAME","BCCFrame")
 Frame:RegisterEvent("PLAYER_LOGIN")
 Frame:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED")
+Frame:RegisterEvent("PLAYER_ENTERING_WORLD")
 Frame:SetScript("OnEvent",BCC_OnEvent)
 Frame:SetScript("OnUpdate",BCC_OnUpdate)
 

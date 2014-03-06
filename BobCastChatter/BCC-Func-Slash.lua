@@ -46,8 +46,6 @@ function BCC_OnSlashCommand(msg,box)
 		BCC_CPrint("/bcc range",1.0,0.5,0.0)
 		BCC_CPrint("/bcc idle",1.0,0.5,0.0)
 		BCC_CPrint("/bcc idleworldmult",1.0,0.5,0.0)
-		print("\n\n")
-
 	end
 end
 
@@ -190,7 +188,7 @@ function BCC_OnSlashCommand_Idle(arg)
 	)
 
 	BCCDB.IdleProc = tonumber(arg)
-	BCC_ResetIdleTimer()
+	BCC_IdleTimer_Reset()
 end
 
 -- /////////////////////////////////////////////////////////////////////////////
@@ -217,7 +215,7 @@ function BCC_OnSlashCommand_IdleWorldMult(arg)
 	)
 
 	BCCDB.IdleWorldMult = tonumber(arg)
-	BCC_ResetIdleTimer()
+	BCC_IdleTimer_Reset()
 end
 
 -- /////////////////////////////////////////////////////////////////////////////
