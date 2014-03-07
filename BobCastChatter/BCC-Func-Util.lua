@@ -99,14 +99,16 @@ function BCC_SpellMessage_ParseText(source)
 	-- parse any tokens in the given message and return the translated string
 	-- for use by the printer.
 
+	local target = UnitName("target")
+	local pet = UnitName("pet")
 	local input = source.Text
 
-	if(UnitName("target") ~= nil) then
-		input = input:gsub("@target",UnitName("target"))
+	if(target ~= nil) then
+		input = input:gsub("@target",target)
 	end
 
-	if(UnitName("pet") ~= nil) then
-		input = input:gsub("@pet",UnitName("pet"))
+	if(pet ~= nil) then
+		input = input:gsub("@pet",pet)
 	end
 
 	input = input:gsub("@player",UnitName("player"))
